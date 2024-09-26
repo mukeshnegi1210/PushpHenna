@@ -130,6 +130,10 @@ h6,
   color: #0A472E !important;
 }
 
+.text-green-light {
+  color: #8CA472 !important;
+}
+
 .text-muted {
   color: #808080 !important;
 }
@@ -137,7 +141,8 @@ h6,
 .text-blue {
   color: #154DDC !important;
 }
-.text-yellow{
+
+.text-yellow {
   color: #FF7A00 !important;
 }
 
@@ -171,7 +176,7 @@ h6,
   background-color: #0A472E !important;
 }
 
-.bg-gray{
+.bg-gray {
   background-color: #A3A39E !important;
 }
 
@@ -181,10 +186,12 @@ h6,
 .font-weight-light {
   font-weight: 300 !important;
 }
-.font-weight-normal{
+
+.font-weight-normal {
   font-weight: 400 !important;
 
 }
+
 .font-weight-medium {
   font-weight: 500 !important;
 }
@@ -247,7 +254,7 @@ h6,
 .btn-green-outline {
   background-color: transparent;
   color: #0A472E;
-  border-color: #0A472E; 
+  border-color: #0A472E;
 }
 
 
@@ -272,8 +279,9 @@ h6,
 .btn-green-outline:hover {
   background-color: #0A472E;
   color: #ffffff;
-  border-color: #0A472E; 
+  border-color: #0A472E;
 }
+
 .btn-green-light:hover {
   background-color: #485837;
   color: #ffffff;
@@ -283,13 +291,11 @@ h6,
 .container {
   max-width: 1200px;
   padding: 0 15px;
-  overflow: hidden;
 }
 
 .container-lg {
   max-width: 1350px;
   padding: 0 15px;
-  overflow: hidden;
 }
 
 /*****************************/
@@ -579,4 +585,45 @@ textarea.form-control:not([rows]) {
 
 .border {
   border-color: #B3B3AA;
+}
+
+
+.custom-accordion .accordion-item {
+  background-color: transparent;
+  border: 0;
+}
+
+.custom-accordion .accordion-header {
+  border-top: 1px solid #B3B3AA;
+}
+
+.custom-accordion .accordion-button,
+.custom-accordion .accordion-button:not(.collapsed) {
+  box-shadow: none;
+  color: #1F1E0B;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.custom-accordion .accordion-button::after {
+  background-image: url(../images/icons/arrow-down.svg);
+  width: 16px;
+  height: 8px;
+  background-size: 16px 8px;
+}
+
+.custom-accordion .accordion-button:not(.collapsed)::after {
+  background-image: url(../images/icons/arrow-up.svg);
+
+}
+
+.custom-accordion .accordion-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+.cursor-pointer{
+  cursor: pointer;
 }
