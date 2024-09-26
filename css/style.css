@@ -254,3 +254,33 @@ footer .footer-copyright ul li+li {
 .otp-input-outer .otp-input-box .form-control {
     text-align: center;
 }
+
+
+
+/* products details ====================== */
+
+.customer-reviews-section .reviews-overview .reviews-stats-list .review-stat .progress {
+    flex: 0 0 200px;
+    height: 25px;
+    border-radius: 0;
+    margin: 0 15px;
+}
+
+.customer-reviews-section .reviews-overview .reviews-stats-list .review-stat+.review-stat {
+    margin-top: 14px;
+}
+.customer-reviews-section .customer-review-card{
+    transition: all 300ms ease-in;
+}
+.customer-reviews-section .customer-review-card:hover{
+transform: scale(1.05);
+}
+.customer-reviews-section .customer-review-card .user-info .user-img {
+    padding: 10px;
+    flex: 0 0 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
