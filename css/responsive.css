@@ -1,0 +1,16 @@
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+    .cart-table .product-img,
+    .cart-table .product-img img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .table>:not(caption)>*>* {
+        padding: 10px 5px;
+    }
+    .cart-table td {
+        padding: 10px 5px;
+    }
+}

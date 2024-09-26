@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./images/favicon/manifest.json" />
+    <meta property="og:title" content="Pushp Henna" />
+    <meta property="og:type" content="website" />
+    <!-- favicon -->
+    <!-- bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css//navbar.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <title>Pushp Henna</title>
+</head>
+<!-- Pre Loader -->
+<!-- <div id="aa-preloader-area">
+    <div class="pulse"></div>
+</div> -->
+<!-- SCROLL TOP BUTTON -->
+<a class="scrollToTop" href="#"><i class="fa fa-angle-double-up"></i></a>
+<!-- END SCROLL TOP BUTTON -->
+
+<body>
+
+    <section class="account-section text-dark py-5">
+        <div class="container">
+            <div class="mb-4">
+                <h2 class="text-secondary">
+                    My Account
+                </h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Your Cart</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div class="account-tabs">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="signin-tab" data-bs-toggle="tab" data-bs-target="#signin"
+                            type="button" role="tab" aria-controls="signin" aria-selected="true">sign in</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="signup-tab" data-bs-toggle="tab" data-bs-target="#signup"
+                            type="button" role="tab" aria-controls="signup" aria-selected="false">sign up</button>
+                    </li>
+
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade py-4 show active" id="signin" role="tabpanel" aria-labelledby="signin-tab">
+
+                        <!-- normal login  -->
+                        <div class="login-wrapper mb-5">
+                            <h4 class="text-secondary font-weight-medium mb-4 text-center">Customer Login</h4>
+                            <form action="">
+                                <div class="mb-3">
+                                    <label for="" class="form-label">
+                                        Email Address<span class="text-danger">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="" placeholder="Enter Email Address">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="" class="form-label">
+                                        Password<span class="text-danger">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="" placeholder="Enter Password">
+                                </div>
+                                <div class="mb-3 mt-4 d-flex justify-content-between">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <a href="#" class="text-blue">Lost your Password?</a>
+                                </div>
+                                <div class="mb-3 mt-4 pt-3 d-flex ">
+                                    <button class="btn btn-green-outline rounded-1">Sign In with OTP</button>
+                                    <button class="btn btn-green ms-4 rounded-1">Sign In with OTP</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- normal login ends  -->
+
+                        <!-- login with otp  -->
+                        <div class="login-with-otp">
+                            <h4 class="text-secondary font-weight-medium mb-4 text-center">Login with OTP</h4>
+                            <form action="">
+                                <div class="mb-3">
+                                    <label for="" class="form-label">
+                                        Phone<span class="text-danger">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="" placeholder="Enter Email Address">
+                                </div>
+
+                                <div class="d-flex otp-input-outer">
+                                    <div class="otp-input-box">
+                                        <input type="text" class="form-control" placeholder="0">
+                                    </div>
+                                    <div class="otp-input-box">
+                                        <input type="text" class="form-control" placeholder="0">
+                                    </div>
+                                    <div class="otp-input-box">
+                                        <input type="text" class="form-control" placeholder="0">
+                                    </div>
+                                    <div class="otp-input-box">
+                                        <input type="text" class="form-control" placeholder="0">
+                                    </div>
+                                    <div class="otp-input-box">
+                                        <input type="text" class="form-control" placeholder="0">
+                                    </div>
+                                    <div class="otp-input-box">
+                                        <input type="text" class="form-control" placeholder="0">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 mt-4 pt-3 d-flex justify-content-center ">
+                                    <button class="btn btn-green ms-4 rounded-1">Request an otp</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- login with otp ends  -->
+
+                    </div>
+                    <div class="tab-pane fade py-4" id="signup" role="tabpanel"
+                        aria-labelledby="signup-tab">
+                        <!-- normal login  -->
+                        <div class="login-wrapper mb-5">
+                            <div class="mb-4 text-center">
+                                <h4 class="text-secondary font-weight-medium ">Become User</h4>
+                                <p class="tex">If you are new to our store, we glad to have you as member.</p>
+                            </div>
+                            <form action="">
+                                <div class="mb-3">
+                                    <label for="" class="form-label">
+                                        First Name<span class="text-danger">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="" placeholder="Enter First Name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="" class="form-label">
+                                        Last Name<span class="text-danger">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="" placeholder="Enter Last Name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="" class="form-label">
+                                        Email<span class="text-danger">*</span>
+                                    </label>
+                                    <div class="form-control d-flex overflow-hidden pe-0 py-0">
+                                        <input type="text" class="bg-transparent flex-grow-1 border-0" id="" placeholder="Enter Email Address">
+                                        <button class="btn py-1 px-3 bg-gray">Send OTP</button>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="" class="form-label">
+                                        OTP<span class="text-danger">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="" placeholder="Enter OTP">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="" class="form-label">
+                                        Phone<span class="text-danger">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="" placeholder="Enter Phone Number">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="" class="form-label">
+                                        Password<span class="text-danger">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="" placeholder="Enter Password">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="" class="form-label">
+                                        Confirm Password<span class="text-danger">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="" placeholder="Enter Confirm Password">
+                                </div>
+                                <div class="mb-3 mt-4 d-flex justify-content-between">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Subscribe to newsletter
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="mb-3 mt-4 d-flex ">
+                                    <button class="btn btn-green rounded-1 px-5">Sign Up</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- normal login ends  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- website features section  -->
+    <div class="website-features py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <div class="website-feature-box text-center">
+                        <div class="img-box mb-4">
+                            <img src="./images/icons/truck-icon.svg" alt="truck-icon">
+                        </div>
+                        <h4 class="fw-normal text-uppercase text-dark">Payment & Delivery</h4>
+                        <p>Free Shipping for Orders Over ₹1000!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <div class="website-feature-box text-center">
+                        <div class="img-box mb-4">
+                            <img src="./images/icons/return-icon.svg" alt="return-icon">
+                        </div>
+                        <h4 class="fw-normal text-uppercase text-dark"> Return & Refund</h4>
+                        <p>Free 100% money back guarantee</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <div class="website-feature-box text-center">
+                        <div class="img-box mb-4">
+                            <img src="./images/icons/quatlity-support-icon.svg" alt="quatlity-support-icon">
+                        </div>
+                        <h4 class="fw-normal text-uppercase text-dark">Quality Support</h4>
+                        <p>Alway online feedback 24/7</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <div class="website-feature-box text-center">
+                        <div class="img-box mb-4">
+                            <img src="./images/icons/join-newsletter-icon.svg" alt="join-newsletter-icon">
+                        </div>
+                        <h4 class="fw-normal text-uppercase text-dark">Join Our Newsletter</h4>
+                        <p>Subscribe & Save 10% Instantly!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- website features section -->
+
+
+    <!--   newsletter section  -->
+    <section class="newsletter-section py-5">
+        <div class="container py-md-5">
+            <div class="form-wrapper text-center">
+
+                <h3 class="text-uppercase mb-4 text-center text-secondary">Stay in the Know – Join Our Newsletter!</h3>
+                <h6 class="fw-normal text-dark mb-4">Subscribe to the store mailing list to receive updates on new
+                    arrivals, special offers and other
+                    discount
+                    information.</h6>
+                <form class="d-flex bg-white shadow-sm py-3 px-3">
+                    <input type="text" class="flex-grow-1 border-0 bg-transparent" placeholder="Your email address">
+                    <button class="bg-transparent border-0">
+                        <img src="./images/icons/send-icon.svg" alt="send-icon">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- newsletter section  -->
+
+    <!-- footer  -->
+    <footer>
+        <div class="footer-top bg-white py-5">
+            <div class="container pt-md-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer-img mb-4">
+                            <img src="./images/footer-logo.png" alt="pushp">
+                        </div>
+                        <ul class="social-media-links d-flex">
+                            <li><a href="https://www.facebook.com/PushpHennaSojat" target="_blank">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a></li>
+                            <li><a href="https://twitter.com/PushpHenna"><i class="fa-brands fa-x-twitter"
+                                        target="_blank"></i></a></li>
+
+                            <li><a href="https://www.instagram.com/pushphenna/"><i class="fa-brands fa-instagram"
+                                        target="_blank"></i></a></li>
+                            <li><a href="https://www.youtube.com/@pushphenna5579"><i class="fa-brands fa-youtube"
+                                        target="_blank"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/82332635"><i class="fa-brands fa-linkedin-in"
+                                        target="_blank"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h6 class="fw-normal text-dark text-uppercase mb-3">Featured Products</h6>
+                        <ul class="footer-links">
+                            <li><a href="#">Voloria Body Lotion Honey and Almond</a></li>
+                            <li><a href="#"> Lagan Premium Cone Blue Wrapper</a></li>
+                            <li><a href="#">Pushp enRich Shampoo Natural Black</a></li>
+                            <li><a href="#"> Pushp Herbal Henna</a></li>
+                            <li><a href="#">Pushp enRich Creme Natural Brown</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="fw-normal text-dark text-uppercase mb-3">Information</h6>
+
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Career</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h6 class="fw-normal text-dark text-uppercase mb-3">Company</h6>
+
+                        <ul class="footer-links">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                            <li><a href="#">Cancellation Policy</a></li>
+                            <li><a href="#">Shipping Policy</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mb-0">Copyright © 2024 <span class="text-dark">Pushphenna</span>. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="d-flex mb-0 align-items-center justify-content-end">
+                            <li><a href="#">CSA</a></li>
+                            <li><a href="#">SS</a></li>
+                            <li><a href="#">Employee</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer  -->
+
+
+    <!-- ============================ Scripts ========================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+
+    <!-- jQuery library -->
+    <!-- <script src="./js/jquery.slim.min.js"></script> -->
+
+    <!-- custom js  -->
+    <script src="./js/custom.js"></script>
+
+</body>
+
+</html>
