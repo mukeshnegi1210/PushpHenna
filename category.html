@@ -27,6 +27,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <!-- custom range selector  -->
+    <link rel="stylesheet" href="./css/selectbox-ui.min.css">
+
+    <!-- font awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -64,15 +68,9 @@
 
         <!-- header bottom -->
         <div class="header-bottom">
-            <div class="container-lg position-relative">
+            <div class="container position-relative">
                 <div class="row align-items-center">
                     <div class="col-4 col-lg-2 col-xl-3 d-flex align-items-center">
-                        <!-- menu opener btn -->
-                        <span class="d-lg-none rounded cursor-pointer open-menu">
-                            <i class="fa-solid text-secondary h4 mb-0 me-1 fa-bars-staggered"></i>
-                        </span>
-                        <!-- menu opener btn ends -->
-
                         <a href="index.html" class="logo">
                             <img src="./images/pushp-logo.png" alt="neml">
                         </a>
@@ -194,6 +192,13 @@
                                     <span class="text-secondary ms-1"> (0) ₹0.00</span>
                                 </a>
                             </li>
+                            <li class="ps-2 d-lg-none">
+                                <!-- menu opener btn -->
+                                <span class="rounded cursor-pointer open-menu">
+                                    <i class="fa-solid text-secondary h4 mb-0 me-1 fa-bars-staggered"></i>
+                                </span>
+                                <!-- menu opener btn ends -->
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -285,7 +290,6 @@
     </header>
     <!-- Header End -->
 
-
     <!-- banner section -->
     <section class="banner-section">
         <h1>
@@ -296,507 +300,414 @@
     </section>
     <!-- banner section -->
 
-
-    <section class="py-5 product-details-section">
+    <!-- product category section  -->
+    <section class="py-5 product-category-section">
         <div class="container">
             <nav aria-label="breadcrumb" class="mb-4">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Skin Care</li>
-                    <li class="breadcrumb-item active" aria-current="page">Voloria Body Lotion Aloevera</li>
+                    <li class="breadcrumb-item active" aria-current="page">Mehandi</li>
                 </ol>
             </nav>
 
-            <div class="row">
-                <!-- Sidebar Filters -->
-                <aside class="col-md-3 filters">
-                    <h5>Filters</h5>
-                    <!-- Categories Filter -->
-                    <div class="mb-4">
-                        <h6>Categories</h6>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="mehandi">
-                            <label class="form-check-label" for="mehandi">Mehandi (16)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="hair-henna">
-                            <label class="form-check-label" for="hair-henna">Hair Henna (5)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="hair-colour">
-                            <label class="form-check-label" for="hair-colour">Hair Colour (14)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="skin-care">
-                            <label class="form-check-label" for="skin-care">Skin Care (7)</label>
-                        </div>
-                    </div>
-
-                    <!-- Price Filter -->
-                    <div class="mb-4">
-                        <h6>Price</h6>
-                        <input type="range" class="form-range" min="0" max="1000">
-                    </div>
-
-                    <!-- Brand Filter -->
-                    <div class="mb-4">
-                        <h6>Brand</h6>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="brand1">
-                            <label class="form-check-label" for="brand1">Pushp</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="brand2">
-                            <label class="form-check-label" for="brand2">Lagan</label>
-                        </div>
-                    </div>
-                </aside>
-
-                <!-- Product Grid -->
-                <div class="col-md-9">
-                    <h2>Skin Care Categories</h2>
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <div>
-                            <button class="btn btn-outline-secondary"><i class="bi bi-grid-fill"></i></button>
-                            <button class="btn btn-outline-secondary"><i class="bi bi-list"></i></button>
-                        </div>
-                        <div>
-                            <select class="form-select" aria-label="Sort by">
-                                <option selected>Sort by: From A-Z</option>
-                                <option value="1">Price: Low to High</option>
-                                <option value="2">Price: High to Low</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Product Cards -->
-                    <div class="row g-4">
-                        <div class="col-md-4">
-                            <div class="product-card position-relative">
-                                <div class="discount">-15%</div>
-                                <img src="product1.jpg" alt="Product Image">
-                                <h5 class="mt-3">Voloria Body Lotion Aloevera</h5>
-                                <p class="price">₹210.00</p>
-                                <button class="btn btn-success">Add to Cart</button>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="product-card position-relative">
-                                <div class="discount">-20%</div>
-                                <img src="product2.jpg" alt="Product Image">
-                                <h5 class="mt-3">Voloria Body Lotion Honey and Almond</h5>
-                                <p class="price">₹210.00</p>
-                                <button class="btn btn-success">Add to Cart</button>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="product-card position-relative">
-                                <div class="discount">-15%</div>
-                                <img src="product3.jpg" alt="Product Image">
-                                <h5 class="mt-3">Voloria Hair Removal Cream Aloe Vera</h5>
-                                <p class="price">₹100.00</p>
-                                <button class="btn btn-success">Add to Cart</button>
-                            </div>
-                        </div>
-
-                        <!-- Add more product cards similarly -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- faq section  -->
-    <section class="faq-section my-5">
-        <div class="container">
-            <h2 class="text-uppercase mb-5 text-secondary">FREQUENTLY ASKED QUESTIONS</h2>
-
-            <div class="faq-question mt-4">
-                <h4 class="text-dark font-weight-normal">Does this product contain artificial color?</h4>
-                <h6 class="font-weight-normal">No, Oshea Herbals’ Phytoage anti-aging Serum doesn’t contain any
-                    artificial colors or fragrances.</h6>
-            </div>
-            <div class="faq-question mt-4">
-                <h4 class="text-dark font-weight-normal">Who can use this product?</h4>
-                <h6 class="font-weight-normal">Anyone who’s above 15 years old.</h6>
-            </div>
-            <div class="faq-question mt-4">
-                <h4 class="text-dark font-weight-normal">How to use PhytoAge anti ageing serum</h4>
-                <h6 class="font-weight-normal">Cleanse your face with Oshea Herbals Face Wash, Pump out a small quantity
-                    of Serum in your palms and liberally apply it all over your face and neck. Massage in a circular
-                    motion to get soft and supple skin.</h6>
-            </div>
-            <div class="faq-question mt-4">
-                <h4 class="text-dark font-weight-normal">What are the benefits of Phytoage Anti Ageing Serum?</h4>
-                <h6 class="font-weight-normal">Benefits of Phytoage Anti Ageing Serum: Reduces the appearance of
-                    wrinkles. Energizes dull-looking skin radiance-boosting. Boosts skin luminosity, youthful skin
-                    appearance. Induces skin brightens and fights oxidative stress. Reduces skin redness. Improves skin
-                    tone evenness. Protects against damaging environmental aggressors.</h6>
-            </div>
-        </div>
-    </section>
-    <!-- faq section  ends-->
-
-    <!-- featured products  section -->
-    <section class="featured-products">
-        <div class="container-lg">
-            <div class="row">
-                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="featured-product position-relative h-100 overflow-hidden rounded-3">
-                        <div class="overlay position-absolute h-100 w-100"></div>
-                        <img src="./images/image-1.png" alt="featured-products" class="h-100 w-100 object-fit-cover">
-                        <div class="content bg-white shadow text-center p-2 rounded-3 position-absolute">
-                            <h6 class="font-small text-dark fw-normal mb-2">
-                                Pushp Henna Fast Cone Red and Black
-                            </h6>
-                            <h5 class="text-orange font-weight-medium mb-1">₹240.00</h5>
-                            <button class="bg-transparent border-0 font-small text-black text-uppercase">Shop
-                                Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="featured-product position-relative h-100 overflow-hidden rounded-3">
-                        <div class="overlay position-absolute h-100 w-100"></div>
-                        <img src="./images/image-2.png" alt="featured-products" class="h-100 w-100 object-fit-cover">
-                        <div class="content bg-white shadow text-center p-2 rounded-3 position-absolute">
-                            <h6 class="font-small text-dark fw-normal mb-2">
-                                Pushp enRich Shampoo Natural Black
-                            </h6>
-                            <h5 class="text-orange font-weight-medium mb-1">₹240.00</h5>
-                            <button class="bg-transparent border-0 font-small text-black text-uppercase">Shop
-                                Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="featured-product position-relative h-100 overflow-hidden rounded-3">
-                        <div class="overlay position-absolute h-100 w-100"></div>
-                        <img src="./images/image-3.png" alt="featured-products" class="h-100 w-100 object-fit-cover">
-                        <div class="content bg-white shadow text-center p-2 rounded-3 position-absolute">
-                            <h6 class="font-small text-dark fw-normal mb-2">
-                                Lagan Premium Cone Blue Wrapper
-                            </h6>
-                            <h5 class="text-orange font-weight-medium mb-1">₹240.00</h5>
-                            <button class="bg-transparent border-0 font-small text-black text-uppercase">Shop
-                                Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="featured-product position-relative h-100 overflow-hidden rounded-3">
-                        <div class="overlay position-absolute h-100 w-100"></div>
-                        <img src="./images/image-4.png" alt="featured-products" class="h-100 w-100 object-fit-cover">
-                        <div class="content bg-white shadow text-center p-2 rounded-3 position-absolute">
-                            <h6 class="font-small text-dark fw-normal mb-2">
-                                Pushp enRich Shampoo Natural Brown
-                            </h6>
-                            <h5 class="text-orange font-weight-medium mb-1">₹240.00</h5>
-                            <button class="bg-transparent border-0 font-small text-black text-uppercase">Shop
-                                Now</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- featured products section -->
-
-    <!-- Customer Reviews  section  -->
-    <section class="customer-reviews-section my-5">
-
-        <div class="reviews-overview bg-light-yellow text-dark py-5">
-            <div class="container-lg">
-                <h2 class="text-uppercase mb-4 text-center text-secondary">Customer Reviews</h2>
-                <div class="row align-items-center">
-                    <div class="col-md-4 text-center">
-                        <div class="d-flex align-items-center justify-content-center mb-2">
-                            <div class="d-flex align-items-center">
-                                <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                <i class="mx-1 h6 mb-0 fa-solid fa-star-half-stroke text-yellow"></i>
-
-                            </div>
-
-                            <h6 class="font-weight-medium text-primary ms-2 mb-0">4.38 out of 5</h6>
-                        </div>
-                        <h6 class="font-weight-medium mb-0">Based on 26 reviews</h6>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="reviews-stats-list">
-                            <div class="d-flex align-items-center review-stat justify-content-center">
-                                <div class="d-flex align-items-center">
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star-half-stroke text-yellow"></i>
-                                </div>
-                                <div class="progress bg-white">
-                                    <div class="progress-bar bg-green-light" role="progressbar" style="width: 90%"
-                                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <h6 class="font-weight-medium mb-0 lh-1">90</h6>
-                            </div>
-                            <div class="d-flex align-items-center review-stat justify-content-center">
-                                <div class="d-flex align-items-center">
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star-half-stroke text-yellow"></i>
-                                </div>
-                                <div class="progress bg-white">
-                                    <div class="progress-bar bg-green-light" role="progressbar" style="width: 90%"
-                                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <h6 class="font-weight-medium mb-0 lh-1">80</h6>
-                            </div>
-                            <div class="d-flex align-items-center review-stat justify-content-center">
-                                <div class="d-flex align-items-center">
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                    <i class="mx-1 h6 fa-regular fa-star text-yellow"></i>
-                                </div>
-                                <div class="progress bg-white">
-                                    <div class="progress-bar bg-green-light" role="progressbar" style="width: 80%"
-                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <h6 class="font-weight-medium mb-0 lh-1">80</h6>
-                            </div>
-                            <div class="d-flex align-items-center review-stat justify-content-center">
-                                <div class="d-flex align-items-center">
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star-half-stroke text-yellow"></i>
-                                </div>
-                                <div class="progress bg-white">
-                                    <div class="progress-bar bg-green-light" role="progressbar" style="width: 25%"
-                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <h6 class="font-weight-medium mb-0 lh-1">80</h6>
-                            </div>
-                            <div class="d-flex align-items-center review-stat justify-content-center">
-                                <div class="d-flex align-items-center">
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star text-yellow"></i>
-                                    <i class="mx-1 h6 mb-0 fa-solid fa-star-half-stroke text-yellow"></i>
-                                </div>
-                                <div class="progress bg-white">
-                                    <div class="progress-bar bg-green-light" role="progressbar" style="width: 25%"
-                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <h6 class="font-weight-medium mb-0 lh-1">80</h6>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <button class="btn btn-green-light px-5">Write a review</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="customer-reviews-list py-5">
-            <div class="container">
+            <div class="product-category text-dark">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                        <div class="customer-review-card text-dark bg-white shadow-sm p-3 rounded-3">
-                            <div class="d-flex mb-3">
-                                <i class="me-1 h5 mb-0 fa-solid fa-star text-yellow"></i>
-                                <i class="me-1 h5 mb-0 fa-solid fa-star text-yellow"></i>
-                                <i class="me-1 h5 mb-0 fa-solid fa-star text-yellow"></i>
-                                <i class="me-1 h5 mb-0 fa-solid fa-star text-yellow"></i>
-                                <i class="me-1 h5 mb-0 fa-solid fa-star text-yellow"></i>
-                            </div>
-                            <div class="user-info mb-3 d-flex align-items-center">
-                                <div class="user-img bg-green-light">
-                                    <img src="./images/icons/user-icon-white.svg" alt="user">
+                    <div class="col-lg-3">
+                        <div class="product-filters">
+                            <h6 class="text-secondary mb-4 pb-2 d-flex align-self-center justify-content-between">
+                                Filters
+                                <button class="d-lg-none bg-transparent border-0 btn-close-filter">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+
+                            </h6>
+                            <div class="accordion custom-accordion" id="accordionProductInfo">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Categories
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show">
+                                        <div class="accordion-body py-0 px-2">
+                                            <ul>
+                                                <li>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="filterCategory1">
+                                                        <label class="form-check-label" for="filterCategory1">
+                                                            Mehandi (16)
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="filterCategory2">
+                                                        <label class="form-check-label" for="filterCategory2">
+                                                            Hair Henna (5)
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="filterCategory3">
+                                                        <label class="form-check-label" for="filterCategory3">
+                                                            Hair Colour (14)
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="filterCategory4" checked>
+                                                        <label class="form-check-label" for="filterCategory4">
+                                                            Skin Care (7)
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p class="mb-0 font-weight-medium">Aditi Patil</p>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Price
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse show">
+                                        <div class="accordion-body py-0 px-2">
+                                            <div class="price-filter mb-4">
+                                                <div class="slider-container">
+                                                    <input type="range" min="0" max="10000" value="0" id="price-range"
+                                                        class="slider">
+                                                    <div class="d-flex text-dark align-items-center mt-3">
+                                                        <div class="border slider-input d-flex align-items-center">
+                                                            <span>₹</span>
+                                                            <input type="text" class="bg-transparent border-0 text-end"
+                                                                id="min-price" value="00" />
+                                                        </div>
+                                                        <span class="mx-2">to</span>
+                                                        <div class="border slider-input d-flex align-items-center">
+                                                            <span>₹</span>
+                                                            <input type="text" class="bg-transparent border-0 text-end"
+                                                                id="max-price" value="1000" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Brand
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse show">
+                                        <div class="accordion-body py-0 px-2">
+                                            <ul>
+                                                <li>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="filterBrand1">
+                                                        <label class="form-check-label" for="filterBrand1">
+                                                            Pushp
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="filterBrand2">
+                                                        <label class="form-check-label" for="filterBrand2">
+                                                            Lagan
+                                                        </label>
+                                                    </div>
+                                                </li>
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            Ratings
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse show">
+                                        <div class="accordion-body py-0 px-2">
+                                            <ul>
+                                                <li>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="filterRating1">
+
+                                                        <label class="form-check-label d-flex align-items-cente"
+                                                            for="filterRating1">
+                                                            <i
+                                                                class="fa-star fa-solid fa-user text-green-light h6 mb-0 me-1"></i>
+                                                            <i
+                                                                class="fa-star fa-solid fa-user text-green-light h6 mb-0 me-1"></i>
+                                                            <i
+                                                                class="fa-star fa-solid fa-user text-green-light h6 mb-0 me-1"></i>
+                                                            <i
+                                                                class="fa-star fa-solid fa-user text-green-light h6 mb-0 me-1"></i>
+                                                            <i
+                                                                class="fa-star fa-solid fa-user text-green-light h6 mb-0 me-1"></i>
+                                                        </label>
+
+
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="filterRating2">
+                                                        <label class="form-check-label d-flex align-items-cente"
+                                                            for="filterRating2">
+                                                            <i
+                                                                class="fa-star fa-solid fa-user text-green-light h6 mb-0 me-1"></i>
+                                                            <i
+                                                                class="fa-star fa-solid fa-user text-green-light h6 mb-0 me-1"></i>
+                                                            <i
+                                                                class="fa-star fa-solid fa-user text-green-light h6 mb-0 me-1"></i>
+                                                            <i
+                                                                class="fa-star fa-solid fa-user text-green-light h6 mb-0 me-1"></i>
+                                                            <i
+                                                                class="fa-star-half-stroke fa-solid fa-user text-green-light h6 mb-0 me-1"></i>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="mb-0 font-weight-medium">Nicee</p>
-                            <p class="mb-0 mt-0">Love the brightening effect </p>
+                            <div class="d-flex justify-content-end w-100 d-lg-none">
+                                <button class="btn btn-green-light btn-apply-filter">Apply</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="product-results">
+                            <h2 class="text-uppercase mb-3 pb-3 text-secondary border-bottom justify-content-between d-flex">
+                                <span>Skin Care Categories</span>
+                                <button class="bg-transparent border-0 btn-open-filter text-secondary p-0">
+                                    <i class="fa-solid fa-filter"></i>
+                                </button>
+                            </h2>
+                            <div class="product-view-filters d-flex justify-content-between mb-4">
+                                <div class="d-flex me-2">
+                                    <button class="bg-transparent border-0">
+                                        <img src="./images/icons/gallery-view-icon.svg" alt="gallery-view-icon">
+                                    </button>
+                                    <button class="bg-transparent border-0">
+                                        <img src="./images/icons/listing-view-icon.svg" alt="listing-view-icon">
+                                    </button>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center me-3">
+                                        <span class="text-nowrap me-2">Sort by</span>
+                                        <select class="form-select h-auto min-h-auto">
+                                            <option selected>From A-Z</option>
+                                            <option value="1">From Z-A</option>
+                                        </select>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <span class="text-nowrap me-2">Show</span>
+                                        <select class="form-select h-auto min-h-auto">
+                                            <option selected>From A-Z</option>
+                                            <option value="1">From Z-A</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- search results section  -->
+                            <div class="products-section">
+                                <div class="row">
+                                    <div class="col-lg-4 col-6 col-md-6 mb-4">
+                                        <div
+                                            class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
+
+                                            <div class="product-img">
+                                                <img src="./images/products/skin-care-category-1.png" alt="">
+                                            </div>
+                                            <p class="text-dark mb-2 product-title">Pushp enRich Creme Dark Brown</p>
+                                            <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor
+                                                sit amet.</p>
+
+                                            <div class="mb-3">
+                                                <span class="bg-green text-white rounded py-1 px-2 font-small">
+                                                    <i class="fa-star fa-solid fa-user"></i>
+                                                    <span>4.6</span>
+                                                </span>
+                                                <span class="ms-1">(154)</span>
+                                            </div>
+                                            <p class="mb-4 font-weight-medium text-dark">
+                                                <span>₹100.00</span>
+                                                <span class="text-orange">₹90.00</span>
+                                                <span>Save</span>
+                                                <span>₹10.00</span>
+                                            </p>
+                                            <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-6 col-md-6 mb-4">
+                                        <div
+                                            class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
+
+                                            <div class="product-img">
+                                                <img src="./images/products/skin-care-category-2.png" alt="">
+                                            </div>
+                                            <p class="text-dark mb-2 product-title">Pushp Henna Kali Mehandi</p>
+                                            <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor
+                                                sit amet.</p>
+
+                                            <div class="mb-3">
+                                                <span class="bg-green text-white rounded py-1 px-2 font-small">
+                                                    <i class="fa-star fa-solid fa-user"></i>
+                                                    <span>4.6</span>
+                                                </span>
+                                                <span class="ms-1">(154)</span>
+                                            </div>
+                                            <p class="mb-4 font-weight-medium text-dark">
+                                                <span>₹100.00</span>
+                                                <span class="text-orange">₹90.00</span>
+                                                <span>Save</span>
+                                                <span>₹10.00</span>
+                                            </p>
+                                            <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-6 col-md-6 mb-4">
+                                        <div
+                                            class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
+                                            <div class="product-img">
+                                                <img src="./images/products/skin-care-category-3.png" alt="">
+                                            </div>
+                                            <p class="text-dark mb-2 product-title">Pushp enRich Creme Natural Black</p>
+                                            <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor
+                                                sit amet.</p>
+
+                                            <div class="mb-3">
+                                                <span class="bg-green text-white rounded py-1 px-2 font-small">
+                                                    <i class="fa-star fa-solid fa-user"></i>
+                                                    <span>4.6</span>
+                                                </span>
+                                                <span class="ms-1">(154)</span>
+                                            </div>
+                                            <p class="mb-4 font-weight-medium text-dark">
+                                                <span>₹100.00</span>
+                                                <span class="text-orange">₹90.00</span>
+                                                <span>Save</span>
+                                                <span>₹10.00</span>
+                                            </p>
+                                            <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-6 col-md-6 mb-4">
+                                        <div
+                                            class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
+
+                                            <div class="product-img">
+                                                <img src="./images/products/skin-care-category-4.png" alt="">
+                                            </div>
+                                            <p class="text-dark mb-2 product-title">Pushp enRich Shampoo Natural Brown
+                                            </p>
+                                            <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor
+                                                sit amet.</p>
+
+                                            <div class="mb-3">
+                                                <span class="bg-green text-white rounded py-1 px-2 font-small">
+                                                    <i class="fa-star fa-solid fa-user"></i>
+                                                    <span>4.6</span>
+                                                </span>
+                                                <span class="ms-1">(154)</span>
+                                            </div>
+                                            <p class="mb-4 font-weight-medium text-dark">
+                                                <span>₹100.00</span>
+                                                <span class="text-orange">₹90.00</span>
+                                                <span>Save</span>
+                                                <span>₹10.00</span>
+                                            </p>
+                                            <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- search results section ends  -->
+
                         </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                        <div class="customer-review-card text-dark bg-white shadow-sm p-3 rounded-3">
-                            <div class="d-flex mb-3">
-                                <i class="me-1 h5 mb-0 fa-solid fa-star text-yellow"></i>
-                                <i class="me-1 h5 mb-0 fa-solid fa-star text-yellow"></i>
-                                <i class="me-1 h5 mb-0 fa-solid fa-star text-yellow"></i>
-                                <i class="me-1 h5 mb-0 fa-solid fa-star text-yellow"></i>
-                                <i class="me-1 h5 mb-0 fa-solid fa-star text-yellow"></i>
-                            </div>
-                            <div class="user-info mb-3 d-flex align-items-center">
-                                <div class="user-img bg-green-light">
-                                    <img src="./images/icons/user-icon-white.svg" alt="user">
-                                </div>
-                                <p class="mb-0 font-weight-medium">Aditi Patil</p>
-                            </div>
-                            <p class="mb-0 font-weight-medium">Nicee</p>
-                            <p class="mb-0 mt-0">Love the brightening effect </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                        <div class="customer-review-card text-dark bg-white shadow-sm p-3 rounded-3">
-                            <div class="d-flex mb-3">
-                                <i class="me-1 h5 mb-0 fa-solid fa-star text-yellow"></i>
-                                <i class="me-1 h5 mb-0 fa-solid fa-star text-yellow"></i>
-                                <i class="me-1 h5 mb-0 fa-solid fa-star text-yellow"></i>
-                                <i class="me-1 h5 mb-0 fa-solid fa-star text-yellow"></i>
-                                <i class="me-1 h5 mb-0 fa-solid fa-star text-yellow"></i>
-                            </div>
-                            <div class="user-info mb-3 d-flex align-items-center">
-                                <div class="user-img bg-green-light">
-                                    <img src="./images/icons/user-icon-white.svg" alt="user">
-                                </div>
-                                <p class="mb-0 font-weight-medium">Aditi Patil</p>
-                            </div>
-                            <p class="mb-0 font-weight-medium">Nicee</p>
-                            <p class="mb-0 mt-0">Love the brightening effect </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                        <div class="customer-review-card text-dark bg-white shadow-sm p-3 rounded-3">
-                            <div class="d-flex mb-3">
-                                <i class="me-1 h5 mb-0 fa-solid fa-star text-yellow"></i>
-                                <i class="me-1 h5 mb-0 fa-solid fa-star text-yellow"></i>
-                                <i class="me-1 h5 mb-0 fa-solid fa-star text-yellow"></i>
-                                <i class="me-1 h5 mb-0 fa-solid fa-star text-yellow"></i>
-                                <i class="me-1 h5 mb-0 fa-solid fa-star text-yellow"></i>
-                            </div>
-                            <div class="user-info mb-3 d-flex align-items-center">
-                                <div class="user-img bg-green-light">
-                                    <img src="./images/icons/user-icon-white.svg" alt="user">
-                                </div>
-                                <p class="mb-0 font-weight-medium">Aditi Patil</p>
-                            </div>
-                            <p class="mb-0 font-weight-medium">Nicee</p>
-                            <p class="mb-0 mt-0">Love the brightening effect </p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="mt-5 text-center">
-                    <button class="btn btn-green-light px-5">Load More</button>
                 </div>
             </div>
         </div>
-
     </section>
-    <!--  relatedCustomer Reviews section ends  -->
+    <!-- product category section  -->
 
-    <!-- related products  section  -->
-    <section class="products-section my-5">
+
+    <!-- product features section  -->
+    <section class="product-features-section py-5">
         <div class="container">
-            <h2 class="text-uppercase mb-4 text-center text-secondary">Related Products</h2>
-            <div class="row py-3">
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
-
-                        <div class="product-img">
-                            <img src="./images/products/skin-care-category-1.png" alt="">
+            <div class="row">
+                <div class="col-lg-3 col-6 mb-4 mb-lg-0">
+                    <div class="product-feature-box text-center">
+                        <div class="icon mb-3 d-flex align-items-center justify-content-center">
+                            <img src="images/icons/safe-effective-icon.svg" alt="safe-effective-icon">
                         </div>
-                        <p class="text-dark mb-3">Pushp enRich Creme Dark Brown</p>
-
-                        <div class="mb-3">
-                            <span class="bg-green text-white rounded py-1 px-2 font-small">
-                                <i class="fa-star fa-solid fa-user"></i>
-                                <span>4.6</span>
-                            </span>
-                            <span class="ms-1">(154)</span>
-                        </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+                        <p class="text-dark">Safe & Effective</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
-
-                        <div class="product-img">
-                            <img src="./images/products/skin-care-category-2.png" alt="">
+                <div class="col-lg-3 col-6 mb-4 mb-lg-0">
+                    <div class="product-feature-box text-center">
+                        <div class="icon mb-3 d-flex align-items-center justify-content-center">
+                            <img src="images/icons/environment-friendly-icon.svg" alt="environment-friendly-icon">
                         </div>
-                        <p class="text-dark mb-3">Pushp Henna Kali Mehandi</p>
-
-                        <div class="mb-3">
-                            <span class="bg-green text-white rounded py-1 px-2 font-small">
-                                <i class="fa-star fa-solid fa-user"></i>
-                                <span>4.6</span>
-                            </span>
-                            <span class="ms-1">(154)</span>
-                        </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+                        <p class="text-dark">Environment Friendly</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
-                        <div class="product-img">
-                            <img src="./images/products/skin-care-category-3.png" alt="">
+                <div class="col-lg-3 col-6 mb-4 mb-lg-0">
+                    <div class="product-feature-box text-center">
+                        <div class="icon mb-3 d-flex align-items-center justify-content-center">
+                            <img src="images/icons/no-chemical-icon.svg" alt="no-chemical-icon">
                         </div>
-                        <p class="text-dark mb-3">Pushp enRich Creme Natural Black</p>
-
-                        <div class="mb-3">
-                            <span class="bg-green text-white rounded py-1 px-2 font-small">
-                                <i class="fa-star fa-solid fa-user"></i>
-                                <span>4.6</span>
-                            </span>
-                            <span class="ms-1">(154)</span>
-                        </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+                        <p class="text-dark">No Harmful Chemicals</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
-
-                        <div class="product-img">
-                            <img src="./images/products/skin-care-category-4.png" alt="">
+                <div class="col-lg-3 col-6 mb-4 mb-lg-0">
+                    <div class="product-feature-box text-center">
+                        <div class="icon mb-3 d-flex align-items-center justify-content-center">
+                            <img src="images/icons/make-up-icon.svg" alt="make-up-icon">
                         </div>
-                        <p class="text-dark mb-3">Pushp enRich Shampoo Natural Brown</p>
-
-                        <div class="mb-3">
-                            <span class="bg-green text-white rounded py-1 px-2 font-small">
-                                <i class="fa-star fa-solid fa-user"></i>
-                                <span>4.6</span>
-                            </span>
-                            <span class="ms-1">(154)</span>
-                        </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+                        <p class="text-dark">Make Skin Naturally Radiant</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--  related products section ends  -->
+    <!-- product features section  -->
 
     <!-- website features section  -->
     <div class="website-features py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <div class="col-lg-3 col-6 mb-4 mb-md-0">
                     <div class="website-feature-box text-center">
                         <div class="img-box mb-4">
                             <img src="./images/icons/truck-icon.svg" alt="truck-icon">
@@ -805,7 +716,7 @@
                         <p>Free Shipping for Orders Over ₹1000!</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <div class="col-lg-3 col-6 mb-4 mb-md-0">
                     <div class="website-feature-box text-center">
                         <div class="img-box mb-4">
                             <img src="./images/icons/return-icon.svg" alt="return-icon">
@@ -814,7 +725,7 @@
                         <p>Free 100% money back guarantee</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <div class="col-lg-3 col-6 mb-4 mb-md-0">
                     <div class="website-feature-box text-center">
                         <div class="img-box mb-4">
                             <img src="./images/icons/quatlity-support-icon.svg" alt="quatlity-support-icon">
@@ -823,7 +734,7 @@
                         <p>Alway online feedback 24/7</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <div class="col-lg-3 col-6 mb-4 mb-md-0">
                     <div class="website-feature-box text-center">
                         <div class="img-box mb-4">
                             <img src="./images/icons/join-newsletter-icon.svg" alt="join-newsletter-icon">
@@ -859,7 +770,7 @@
     <!-- newsletter section  -->
 
     <!-- footer  -->
-    <footer>
+    <footer class="text-center text-md-start">
         <div class="footer-top bg-white py-5">
             <div class="container pt-md-4">
                 <div class="row">
@@ -867,7 +778,7 @@
                         <div class="footer-img mb-4">
                             <img src="./images/footer-logo.png" alt="pushp">
                         </div>
-                        <ul class="social-media-links d-flex">
+                        <ul class="social-media-links d-flex justify-content-center justify-content-md-start">
                             <li><a href="https://www.facebook.com/PushpHennaSojat" target="_blank">
                                     <i class="fa-brands fa-facebook-f"></i>
                                 </a></li>
@@ -883,25 +794,24 @@
                         </ul>
                     </div>
 
-                    <div class="col-md-4">
-                        <h6 class="fw-normal text-dark text-uppercase mb-3">Featured Products</h6>
+                    <div class="col-md-3">
+                        <h6 class="fw-normal text-dark text-uppercase mb-3">Products</h6>
                         <ul class="footer-links">
-                            <li><a href="#">Voloria Body Lotion Honey and Almond</a></li>
-                            <li><a href="#"> Lagan Premium Cone Blue Wrapper</a></li>
-                            <li><a href="#">Pushp enRich Shampoo Natural Black</a></li>
-                            <li><a href="#"> Pushp Herbal Henna</a></li>
-                            <li><a href="#">Pushp enRich Creme Natural Brown</a></li>
+                            <li><a href="#">Mehandi </a></li>
+                            <li><a href="#">Hair Henna </a></li>
+                            <li><a href="#">Hair Colour </a></li>
+                            <li><a href="#">Skin Care</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-2">
-                        <h6 class="fw-normal text-dark text-uppercase mb-3">Information</h6>
+                    <div class="col-md-3">
+                        <h6 class="fw-normal text-dark text-uppercase mb-3">COMPANY </h6>
 
                         <ul class="footer-links">
                             <li><a href="#">Home</a></li>
+                            <li><a href="#">Brands </a></li>
                             <li><a href="#">About Us</a></li>
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">Career</a></li>
                             <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Career</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3">
@@ -916,24 +826,20 @@
                             <li><a href="#">Return Policy</a></li>
                         </ul>
                     </div>
-
+                    <div class="col-md-12  py-3 text-dark text-center">
+                        <h6>Pushp Henna Private Limited</h6>
+                        <p>Near Kushal Krishi Farm, Sojat Road Marg, Sojat, Rajasthan 306104</p>
+                        <p>contact us at 096496 78969</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="footer-copyright py-3">
+        <div class="footer-copyright  text-dark text-center">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <p class="mb-0">Copyright © 2024 <span class="text-dark">Pushphenna</span>. All Rights Reserved.
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="d-flex mb-0 align-items-center justify-content-end">
-                            <li><a href="#">CSA</a></li>
-                            <li><a href="#">SS</a></li>
-                            <li><a href="#">Employee</a></li>
-                        </ul>
+                    <div class="col-md-12">
+                        <p class="mb-0">Copyright © 2024 pushphenna.com. All Rights Reserved.</p>
                     </div>
                 </div>
             </div>
@@ -955,9 +861,53 @@
     <!-- jQuery library -->
     <script src="./js/jquery.slim.min.js"></script>
 
+    <!-- custom range select  -->
+    <script src="./js/selectbox-ui.min.js"></script>
+
     <!-- custom js  -->
     <script src="./js/custom.js"></script>
+    <script>
+        // $("#mukesh").slider();
 
+        // $("#mukesh").on("slide", function (slideEvt) {
+        //     $("#ex3SliderVal").text(slideEvt.value);
+        // });
+
+        let priceRange = $('#price-range');
+        let minPrice = $('#min-price');
+        let maxPrice = $('#max-price');
+
+        // Set initial min and max price
+        let minValue = 0;
+        let maxValue = 10000;
+
+        // Update min and max price based on slider value
+        priceRange.on('input', function () {
+            let value = priceRange.val();
+
+            if (value <= 10000) {
+                minPrice.val(value);
+                minValue = value;
+            } else {
+                maxPrice.val(value);
+                maxValue = value;
+            }
+        });
+
+        // Sync the range sliders when the input fields change
+        minPrice.on('input', function () {
+            minValue = minPrice.val();
+        });
+
+        maxPrice.on('input', function () {
+            maxValue = maxPrice.val();
+        });
+
+        // Toggle the price filter display (optional)
+        // $('#toggle-filter').click(function () {
+        //     $('.slider-container').toggle();
+        // });
+    </script>
 </body>
 
 </html>

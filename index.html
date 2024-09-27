@@ -64,15 +64,9 @@
 
         <!-- header bottom -->
         <div class="header-bottom">
-            <div class="container-lg position-relative">
+            <div class="container position-relative">
                 <div class="row align-items-center">
                     <div class="col-4 col-lg-2 col-xl-3 d-flex align-items-center">
-                        <!-- menu opener btn -->
-                        <span class="d-lg-none rounded cursor-pointer open-menu">
-                            <i class="fa-solid text-secondary h4 mb-0 me-1 fa-bars-staggered"></i>
-                        </span>
-                        <!-- menu opener btn ends -->
-
                         <a href="index.html" class="logo">
                             <img src="./images/pushp-logo.png" alt="neml">
                         </a>
@@ -176,7 +170,8 @@
                         </nav>
                     </div>
                     <!-- desktop  Menu ends-->
-                    <div class="col-8 d-flex justify-content-lg-start justify-content-end col-lg-3 border-lg-start border-secondary header-actions">
+                    <div
+                        class="col-8 d-flex justify-content-lg-start justify-content-end col-lg-3 border-lg-start border-secondary header-actions">
                         <ul class="d-flex align-items-center mb-0">
                             <li class="px-2">
                                 <button class="bg-transparent border-0 header-search-btn">
@@ -193,6 +188,13 @@
                                     <img src="./images/icons/shopping-bag-icon.svg" alt="shopping-bag-icon">
                                     <span class="text-secondary ms-1"> (0) ₹0.00</span>
                                 </a>
+                            </li>
+                            <li class="ps-2 d-lg-none">
+                                <!-- menu opener btn -->
+                                <span class="rounded cursor-pointer open-menu">
+                                    <i class="fa-solid text-secondary h4 mb-0 me-1 fa-bars-staggered"></i>
+                                </span>
+                                <!-- menu opener btn ends -->
                             </li>
                         </ul>
                     </div>
@@ -295,21 +297,19 @@
                     aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#bannerCarouselIndicators" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#bannerCarouselIndicators" data-bs-slide-to="3"
-                    aria-label="Slide 4">4</button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <h1>
                         <a href="#" class="d-block">
-                            <img src="./images/banners/banner-4.jpg" class="d-block w-100" alt="bannerimg">
+                            <img src="./images/banners/skin-care-banner.jpg" class="d-block w-100" alt="bannerimg">
                         </a>
                     </h1>
                 </div>
                 <div class="carousel-item">
                     <h1>
                         <a href="#" class="d-block">
-                            <img src="./images/banners/banner-3.jpg" class="d-block w-100" alt="bannerimg">
+                            <img src="./images/banners/mehandi-banner.jpg" class="d-block w-100" alt="bannerimg">
                         </a>
                     </h1>
                 </div>
@@ -317,17 +317,11 @@
                 <div class="carousel-item ">
                     <h1>
                         <a href="#" class="d-block">
-                            <img src="./images/banners/banner-1.jpg" class="d-block w-100" alt="bannerimg">
+                            <img src="./images/banners/hair-colour-banner.jpg" class="d-block w-100" alt="bannerimg">
                         </a>
                     </h1>
                 </div>
-                <div class="carousel-item">
-                    <h1>
-                        <a href="#" class="d-block">
-                            <img src="./images/banners/banner-2.jpg" class="d-block w-100" alt="bannerimg">
-                        </a>
-                    </h1>
-                </div>
+
 
             </div>
 
@@ -336,22 +330,22 @@
     <!-- banner section -->
 
 
-
     <!-- best sellers  section  -->
     <section class="products-section my-5">
         <div class="container">
             <h2 class="text-uppercase mb-4 text-center text-secondary">Shop Bestsellers</h2>
             <div class="row py-3">
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
+                        class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
                         <span class="discount-tag px-3 py-1 position-absolute bg-orange-light text-white">
                             -12%
                         </span>
                         <div class="product-img">
                             <img src="./images/products/product-1.png" alt="">
                         </div>
-                        <p class="text-dark mb-3">Pushp enRich Shampoo Dark Brown</p>
+                        <p class="text-dark mb-2 product-title">Pushp enRich Shampoo Dark Brown</p>
+                        <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
 
                         <div class="mb-3">
                             <span class="bg-green text-white rounded py-1 px-2 font-small">
@@ -360,20 +354,27 @@
                             </span>
                             <span class="ms-1">(154)</span>
                         </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+
+                        <p class="mb-4 font-weight-medium text-dark">
+                            <span>₹100.00</span>
+                            <span class="text-orange">₹90.00</span>
+                            <span>Save</span>
+                            <span>₹10.00</span>
+                        </p>
+                        <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
+                        class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
                         <span class="discount-tag px-3 py-1 position-absolute bg-orange-light text-white">
                             -12%
                         </span>
                         <div class="product-img">
                             <img src="./images/products/product-2.png" alt="">
                         </div>
-                        <p class="text-dark mb-3">Pushp enRich Shampoo Natural Black</p>
+                        <p class="text-dark mb-2 product-title">Pushp enRich Shampoo Natural Black</p>
+                        <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
 
                         <div class="mb-3">
                             <span class="bg-green text-white rounded py-1 px-2 font-small">
@@ -382,20 +383,26 @@
                             </span>
                             <span class="ms-1">(154)</span>
                         </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+                        <p class="mb-4 font-weight-medium text-dark">
+                            <span>₹100.00</span>
+                            <span class="text-orange">₹90.00</span>
+                            <span>Save</span>
+                            <span>₹10.00</span>
+                        </p>
+                        <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
+                        class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
                         <span class="discount-tag px-3 py-1 position-absolute bg-orange-light text-white">
                             -12%
                         </span>
                         <div class="product-img">
                             <img src="./images/products/product-3.png" alt="">
                         </div>
-                        <p class="text-dark mb-3">Lagan Premium Cone Blue Wrapper</p>
+                        <p class="text-dark mb-2 product-title">Lagan Premium Cone Blue Wrapper</p>
+                        <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
 
                         <div class="mb-3">
                             <span class="bg-green text-white rounded py-1 px-2 font-small">
@@ -404,20 +411,26 @@
                             </span>
                             <span class="ms-1">(154)</span>
                         </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+                        <p class="mb-4 font-weight-medium text-dark">
+                            <span>₹100.00</span>
+                            <span class="text-orange">₹90.00</span>
+                            <span>Save</span>
+                            <span>₹10.00</span>
+                        </p>
+                        <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
+                        class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
                         <span class="discount-tag px-3 py-1 position-absolute bg-orange-light text-white">
                             -12%
                         </span>
                         <div class="product-img">
                             <img src="./images/products/product-4.png" alt="">
                         </div>
-                        <p class="text-dark mb-3">Pushp enRich Shampoo Natural Brown</p>
+                        <p class="text-dark mb-2 product-title">Pushp enRich Shampoo Natural Brown</p>
+                        <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
 
                         <div class="mb-3">
                             <span class="bg-green text-white rounded py-1 px-2 font-small">
@@ -426,8 +439,13 @@
                             </span>
                             <span class="ms-1">(154)</span>
                         </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+                        <p class="mb-4 font-weight-medium text-dark">
+                            <span>₹100.00</span>
+                            <span class="text-orange">₹90.00</span>
+                            <span>Save</span>
+                            <span>₹10.00</span>
+                        </p>
+                        <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
                     </div>
                 </div>
             </div>
@@ -456,7 +474,7 @@
     <section class="why-us my-5">
         <div class="container-lg">
             <div class="row my-3">
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div class="why-us-box bg-white p-3 shadow-sm text-center rounded h-100">
                         <div class="img-box mb-3">
                             <img src="./images/icons/made-in-india-icon.svg" alt="made-in-india-icon">
@@ -467,7 +485,7 @@
                             benchmarks at our own unit. </p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div class="why-us-box bg-white p-3 shadow-sm text-center rounded h-100">
                         <div class="img-box mb-3">
                             <img src="./images/icons/100-natural.svg" alt="100-natural">
@@ -477,7 +495,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div class="why-us-box bg-white p-3 shadow-sm text-center rounded h-100">
                         <div class="img-box mb-3">
                             <img src="./images/icons/quality-assured.svg" alt="quality-assured">
@@ -486,7 +504,7 @@
                         <p>Being manufactured and processed at our end, each product is quality tested & certified. </p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div class="why-us-box bg-white p-3 shadow-sm text-center rounded h-100">
                         <div class="img-box mb-3">
                             <img src="./images/icons/hand-crafted.svg" alt="hand-crafted">
@@ -505,7 +523,7 @@
     <section class="featured-products">
         <div class="container-lg">
             <div class="row">
-                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="col-md-6 col-6 col-lg-3 mb-4 mb-lg-0">
                     <div class="featured-product position-relative h-100 overflow-hidden rounded-3">
                         <div class="overlay position-absolute h-100 w-100"></div>
                         <img src="./images/image-1.png" alt="featured-products" class="h-100 w-100 object-fit-cover">
@@ -519,7 +537,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="col-md-6 col-6 col-lg-3 mb-4 mb-lg-0">
                     <div class="featured-product position-relative h-100 overflow-hidden rounded-3">
                         <div class="overlay position-absolute h-100 w-100"></div>
                         <img src="./images/image-2.png" alt="featured-products" class="h-100 w-100 object-fit-cover">
@@ -533,7 +551,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="col-md-6 col-6 col-lg-3 mb-4 mb-lg-0">
                     <div class="featured-product position-relative h-100 overflow-hidden rounded-3">
                         <div class="overlay position-absolute h-100 w-100"></div>
                         <img src="./images/image-3.png" alt="featured-products" class="h-100 w-100 object-fit-cover">
@@ -547,7 +565,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="col-md-6 col-6 col-lg-3 mb-4 mb-lg-0">
                     <div class="featured-product position-relative h-100 overflow-hidden rounded-3">
                         <div class="overlay position-absolute h-100 w-100"></div>
                         <img src="./images/image-4.png" alt="featured-products" class="h-100 w-100 object-fit-cover">
@@ -573,14 +591,15 @@
         <div class="container">
             <h2 class="text-uppercase mb-4 text-center text-secondary">Mehandi CATEGORIES</h2>
             <div class="row py-3">
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
+                        class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
 
                         <div class="product-img">
                             <img src="./images/products/mehandi-category-1.png" alt="">
                         </div>
-                        <p class="text-dark mb-3">Lagan Premium Cone Blue Wrapper</p>
+                        <p class="text-dark mb-2 product-title">Lagan Premium Cone Blue Wrapper</p>
+                        <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
 
                         <div class="mb-3">
                             <span class="bg-green text-white rounded py-1 px-2 font-small">
@@ -589,18 +608,24 @@
                             </span>
                             <span class="ms-1">(154)</span>
                         </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+                        <p class="mb-4 font-weight-medium text-dark">
+                            <span>₹100.00</span>
+                            <span class="text-orange">₹90.00</span>
+                            <span>Save</span>
+                            <span>₹10.00</span>
+                        </p>
+                        <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
+                        class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
 
                         <div class="product-img">
                             <img src="./images/products/mehandi-category-2.png" alt="">
                         </div>
-                        <p class="text-dark mb-3">Pushp Henna Fast Cone Red and Black</p>
+                        <p class="text-dark mb-2 product-title">Pushp Henna Fast Cone Red and Black</p>
+                        <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
 
                         <div class="mb-3">
                             <span class="bg-green text-white rounded py-1 px-2 font-small">
@@ -609,17 +634,23 @@
                             </span>
                             <span class="ms-1">(154)</span>
                         </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+                        <p class="mb-4 font-weight-medium text-dark">
+                            <span>₹100.00</span>
+                            <span class="text-orange">₹90.00</span>
+                            <span>Save</span>
+                            <span>₹10.00</span>
+                        </p>
+                        <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
+                        class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
                         <div class="product-img">
                             <img src="./images/products/mehandi-category-3.png" alt="">
                         </div>
-                        <p class="text-dark mb-3">Pushp Henna Fast Tube Red and Black</p>
+                        <p class="text-dark mb-2 product-title">Pushp Henna Fast Tube Red and Black</p>
+                        <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
 
                         <div class="mb-3">
                             <span class="bg-green text-white rounded py-1 px-2 font-small">
@@ -628,18 +659,24 @@
                             </span>
                             <span class="ms-1">(154)</span>
                         </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+                        <p class="mb-4 font-weight-medium text-dark">
+                            <span>₹100.00</span>
+                            <span class="text-orange">₹90.00</span>
+                            <span>Save</span>
+                            <span>₹10.00</span>
+                        </p>
+                        <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
+                        class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
 
                         <div class="product-img">
                             <img src="./images/products/mehandi-category-4.png" alt="">
                         </div>
-                        <p class="text-dark mb-3">Pushp Henna Rachani Mehandi 200gm</p>
+                        <p class="text-dark mb-2 product-title">Pushp Henna Rachani Mehandi 200gm</p>
+                        <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
 
                         <div class="mb-3">
                             <span class="bg-green text-white rounded py-1 px-2 font-small">
@@ -648,8 +685,13 @@
                             </span>
                             <span class="ms-1">(154)</span>
                         </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+                        <p class="mb-4 font-weight-medium text-dark">
+                            <span>₹100.00</span>
+                            <span class="text-orange">₹90.00</span>
+                            <span>Save</span>
+                            <span>₹10.00</span>
+                        </p>
+                        <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
                     </div>
                 </div>
             </div>
@@ -662,15 +704,17 @@
         <div class="container">
             <h2 class="text-uppercase mb-4 text-center text-secondary">Hair Henna CATEGORIES</h2>
             <div class="row py-3">
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
+                        class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
 
                         <div class="product-img">
                             <img src="./images/products/hair-category-1.png" alt="">
                         </div>
-                        <p class="text-dark mb-3">Pushp Herbal Henna
+                        <p class="text-dark mb-2 product-title">Pushp Herbal Henna
                             140gm</p>
+                        <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
+
 
                         <div class="mb-3">
                             <span class="bg-green text-white rounded py-1 px-2 font-small">
@@ -679,18 +723,24 @@
                             </span>
                             <span class="ms-1">(154)</span>
                         </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+                        <p class="mb-4 font-weight-medium text-dark">
+                            <span>₹100.00</span>
+                            <span class="text-orange">₹90.00</span>
+                            <span>Save</span>
+                            <span>₹10.00</span>
+                        </p>
+                        <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
+                        class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
 
                         <div class="product-img">
                             <img src="./images/products/hair-category-2.png" alt="">
                         </div>
-                        <p class="text-dark mb-3">Pushp Herbal Henna 15gm</p>
+                        <p class="text-dark mb-2 product-title">Pushp Herbal Henna 15gm</p>
+                        <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
 
                         <div class="mb-3">
                             <span class="bg-green text-white rounded py-1 px-2 font-small">
@@ -699,18 +749,25 @@
                             </span>
                             <span class="ms-1">(154)</span>
                         </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+                        <p class="mb-4 font-weight-medium text-dark">
+                            <span>₹100.00</span>
+                            <span class="text-orange">₹90.00</span>
+                            <span>Save</span>
+                            <span>₹10.00</span>
+                        </p>
+                        <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
+                        class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
                         <div class="product-img">
                             <img src="./images/products/hair-category-3.png" alt="">
                         </div>
-                        <p class="text-dark mb-3">Pushp Herbal Mehandi
+                        <p class="text-dark mb-2 product-title">Pushp Herbal Mehandi
                             500gm</p>
+                        <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
+
 
                         <div class="mb-3">
                             <span class="bg-green text-white rounded py-1 px-2 font-small">
@@ -719,19 +776,26 @@
                             </span>
                             <span class="ms-1">(154)</span>
                         </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+                        <p class="mb-4 font-weight-medium text-dark">
+                            <span>₹100.00</span>
+                            <span class="text-orange">₹90.00</span>
+                            <span>Save</span>
+                            <span>₹10.00</span>
+                        </p>
+                        <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
+                        class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
 
                         <div class="product-img">
                             <img src="./images/products/hair-category-4.png" alt="">
                         </div>
-                        <p class="text-dark mb-3">Pushp Herbal Henna
+                        <p class="text-dark mb-2 product-title">Pushp Herbal Henna
                             500gm</p>
+                        <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
+
 
                         <div class="mb-3">
                             <span class="bg-green text-white rounded py-1 px-2 font-small">
@@ -740,8 +804,13 @@
                             </span>
                             <span class="ms-1">(154)</span>
                         </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+                        <p class="mb-4 font-weight-medium text-dark">
+                            <span>₹100.00</span>
+                            <span class="text-orange">₹90.00</span>
+                            <span>Save</span>
+                            <span>₹10.00</span>
+                        </p>
+                        <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
                     </div>
                 </div>
             </div>
@@ -760,7 +829,7 @@
 
 
     <!-- product features section  -->
-    <section class="product-features-section py-5">
+    <section class="product-features-section my-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-6 mb-4 mb-lg-0">
@@ -805,14 +874,15 @@
         <div class="container">
             <h2 class="text-uppercase mb-4 text-center text-secondary">Hair Colour CATEGORIES</h2>
             <div class="row py-3">
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
+                        class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
 
                         <div class="product-img">
                             <img src="./images/products/hair-color-category-1.png" alt="">
                         </div>
-                        <p class="text-dark mb-3">Pushp enRich Creme Dark Brown</p>
+                        <p class="text-dark mb-2 product-title">Pushp enRich Creme Dark Brown</p>
+                        <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
 
                         <div class="mb-3">
                             <span class="bg-green text-white rounded py-1 px-2 font-small">
@@ -821,18 +891,24 @@
                             </span>
                             <span class="ms-1">(154)</span>
                         </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+                        <p class="mb-4 font-weight-medium text-dark">
+                            <span>₹100.00</span>
+                            <span class="text-orange">₹90.00</span>
+                            <span>Save</span>
+                            <span>₹10.00</span>
+                        </p>
+                        <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
+                        class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
 
                         <div class="product-img">
                             <img src="./images/products/hair-color-category-2.png" alt="">
                         </div>
-                        <p class="text-dark mb-3">Pushp Henna Kali Mehandi</p>
+                        <p class="text-dark mb-2 product-title">Pushp Henna Kali Mehandi</p>
+                        <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
 
                         <div class="mb-3">
                             <span class="bg-green text-white rounded py-1 px-2 font-small">
@@ -841,17 +917,23 @@
                             </span>
                             <span class="ms-1">(154)</span>
                         </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+                        <p class="mb-4 font-weight-medium text-dark">
+                            <span>₹100.00</span>
+                            <span class="text-orange">₹90.00</span>
+                            <span>Save</span>
+                            <span>₹10.00</span>
+                        </p>
+                        <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
+                        class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
                         <div class="product-img">
                             <img src="./images/products/hair-color-category-3.png" alt="">
                         </div>
-                        <p class="text-dark mb-3">Pushp enRich Creme Natural Black</p>
+                        <p class="text-dark mb-2 product-title">Pushp enRich Creme Natural Black</p>
+                        <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
 
                         <div class="mb-3">
                             <span class="bg-green text-white rounded py-1 px-2 font-small">
@@ -860,18 +942,24 @@
                             </span>
                             <span class="ms-1">(154)</span>
                         </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+                        <p class="mb-4 font-weight-medium text-dark">
+                            <span>₹100.00</span>
+                            <span class="text-orange">₹90.00</span>
+                            <span>Save</span>
+                            <span>₹10.00</span>
+                        </p>
+                        <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
+                        class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
 
                         <div class="product-img">
                             <img src="./images/products/hair-color-category-4.png" alt="">
                         </div>
-                        <p class="text-dark mb-3">Pushp enRich Shampoo Natural Brown</p>
+                        <p class="text-dark mb-2 product-title">Pushp enRich Shampoo Natural Brown</p>
+                        <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
 
                         <div class="mb-3">
                             <span class="bg-green text-white rounded py-1 px-2 font-small">
@@ -880,8 +968,13 @@
                             </span>
                             <span class="ms-1">(154)</span>
                         </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+                        <p class="mb-4 font-weight-medium text-dark">
+                            <span>₹100.00</span>
+                            <span class="text-orange">₹90.00</span>
+                            <span>Save</span>
+                            <span>₹10.00</span>
+                        </p>
+                        <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
                     </div>
                 </div>
             </div>
@@ -890,7 +983,7 @@
     <!-- Hair Colour categories section ends  -->
 
     <!-- product features section  -->
-    <section class="product-features-section py-5">
+    <section class="product-features-section my-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-6 mb-4 mb-lg-0">
@@ -936,14 +1029,15 @@
         <div class="container">
             <h2 class="text-uppercase mb-4 text-center text-secondary">Skin Care CATEGORIES</h2>
             <div class="row py-3">
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
+                        class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
 
                         <div class="product-img">
                             <img src="./images/products/skin-care-category-1.png" alt="">
                         </div>
-                        <p class="text-dark mb-3">Pushp enRich Creme Dark Brown</p>
+                        <p class="text-dark mb-2 product-title">Pushp enRich Creme Dark Brown</p>
+                        <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
 
                         <div class="mb-3">
                             <span class="bg-green text-white rounded py-1 px-2 font-small">
@@ -952,18 +1046,24 @@
                             </span>
                             <span class="ms-1">(154)</span>
                         </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+                        <p class="mb-4 font-weight-medium text-dark">
+                            <span>₹100.00</span>
+                            <span class="text-orange">₹90.00</span>
+                            <span>Save</span>
+                            <span>₹10.00</span>
+                        </p>
+                        <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
+                        class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
 
                         <div class="product-img">
                             <img src="./images/products/skin-care-category-2.png" alt="">
                         </div>
-                        <p class="text-dark mb-3">Pushp Henna Kali Mehandi</p>
+                        <p class="text-dark mb-2 product-title">Pushp Henna Kali Mehandi</p>
+                        <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
 
                         <div class="mb-3">
                             <span class="bg-green text-white rounded py-1 px-2 font-small">
@@ -972,17 +1072,23 @@
                             </span>
                             <span class="ms-1">(154)</span>
                         </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+                        <p class="mb-4 font-weight-medium text-dark">
+                            <span>₹100.00</span>
+                            <span class="text-orange">₹90.00</span>
+                            <span>Save</span>
+                            <span>₹10.00</span>
+                        </p>
+                        <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
+                        class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
                         <div class="product-img">
                             <img src="./images/products/skin-care-category-3.png" alt="">
                         </div>
-                        <p class="text-dark mb-3">Pushp enRich Creme Natural Black</p>
+                        <p class="text-dark mb-2 product-title">Pushp enRich Creme Natural Black</p>
+                        <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
 
                         <div class="mb-3">
                             <span class="bg-green text-white rounded py-1 px-2 font-small">
@@ -991,18 +1097,24 @@
                             </span>
                             <span class="ms-1">(154)</span>
                         </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+                        <p class="mb-4 font-weight-medium text-dark">
+                            <span>₹100.00</span>
+                            <span class="text-orange">₹90.00</span>
+                            <span>Save</span>
+                            <span>₹10.00</span>
+                        </p>
+                        <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-6 col-md-6 mb-4 mb-lg-0">
                     <div
-                        class="product-box bg-white shadow rounded text-center h-100 p-3 position-relative d-flex flex-column  justify-content-end">
+                        class="product-box bg-white shadow rounded text-center h-100 p-1 p-md-3 position-relative d-flex flex-column">
 
                         <div class="product-img">
                             <img src="./images/products/skin-care-category-4.png" alt="">
                         </div>
-                        <p class="text-dark mb-3">Pushp enRich Shampoo Natural Brown</p>
+                        <p class="text-dark mb-2 product-title">Pushp enRich Shampoo Natural Brown</p>
+                        <p class="text-dark mb-3 mt-0 product-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
 
                         <div class="mb-3">
                             <span class="bg-green text-white rounded py-1 px-2 font-small">
@@ -1011,8 +1123,13 @@
                             </span>
                             <span class="ms-1">(154)</span>
                         </div>
-                        <h5 class="text-orange font-weight-medium mb-3">₹100.00</h5>
-                        <button class="btn btn-green-light w-100">Add To Cart</button>
+                        <p class="mb-4 font-weight-medium text-dark">
+                            <span>₹100.00</span>
+                            <span class="text-orange">₹90.00</span>
+                            <span>Save</span>
+                            <span>₹10.00</span>
+                        </p>
+                        <button class="btn btn-green-light w-100 mt-auto">Add To Cart</button>
                     </div>
                 </div>
             </div>
@@ -1030,7 +1147,7 @@
     <!-- offer banner  -->
 
     <!-- product features section  -->
-    <section class="product-features-section py-5">
+    <section class="product-features-section my-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-6 mb-4 mb-lg-0">
@@ -1233,7 +1350,7 @@
     <!-- newsletter section  -->
 
     <!-- footer  -->
-    <footer>
+    <footer class="text-center text-md-start">
         <div class="footer-top bg-white py-5">
             <div class="container pt-md-4">
                 <div class="row">
@@ -1241,7 +1358,7 @@
                         <div class="footer-img mb-4">
                             <img src="./images/footer-logo.png" alt="pushp">
                         </div>
-                        <ul class="social-media-links d-flex">
+                        <ul class="social-media-links d-flex justify-content-center justify-content-md-start">
                             <li><a href="https://www.facebook.com/PushpHennaSojat" target="_blank">
                                     <i class="fa-brands fa-facebook-f"></i>
                                 </a></li>
@@ -1257,25 +1374,24 @@
                         </ul>
                     </div>
 
-                    <div class="col-md-4">
-                        <h6 class="fw-normal text-dark text-uppercase mb-3">Featured Products</h6>
+                    <div class="col-md-3">
+                        <h6 class="fw-normal text-dark text-uppercase mb-3">Products</h6>
                         <ul class="footer-links">
-                            <li><a href="#">Voloria Body Lotion Honey and Almond</a></li>
-                            <li><a href="#"> Lagan Premium Cone Blue Wrapper</a></li>
-                            <li><a href="#">Pushp enRich Shampoo Natural Black</a></li>
-                            <li><a href="#"> Pushp Herbal Henna</a></li>
-                            <li><a href="#">Pushp enRich Creme Natural Brown</a></li>
+                            <li><a href="#">Mehandi </a></li>
+                            <li><a href="#">Hair Henna </a></li>
+                            <li><a href="#">Hair Colour </a></li>
+                            <li><a href="#">Skin Care</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-2">
-                        <h6 class="fw-normal text-dark text-uppercase mb-3">Information</h6>
+                    <div class="col-md-3">
+                        <h6 class="fw-normal text-dark text-uppercase mb-3">COMPANY </h6>
 
                         <ul class="footer-links">
                             <li><a href="#">Home</a></li>
+                            <li><a href="#">Brands </a></li>
                             <li><a href="#">About Us</a></li>
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">Career</a></li>
                             <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Career</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3">
@@ -1290,24 +1406,20 @@
                             <li><a href="#">Return Policy</a></li>
                         </ul>
                     </div>
-
+                    <div class="col-md-12  py-3 text-dark text-center">
+                        <h6>Pushp Henna Private Limited</h6>
+                        <p>Near Kushal Krishi Farm, Sojat Road Marg, Sojat, Rajasthan 306104</p>
+                        <p>contact us at 096496 78969</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="footer-copyright py-3">
+        <div class="footer-copyright  text-dark text-center">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <p class="mb-0">Copyright © 2024 <span class="text-dark">Pushphenna</span>. All Rights Reserved.
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="d-flex mb-0 align-items-center justify-content-end">
-                            <li><a href="#">CSA</a></li>
-                            <li><a href="#">SS</a></li>
-                            <li><a href="#">Employee</a></li>
-                        </ul>
+                    <div class="col-md-12">
+                        <p class="mb-0">Copyright © 2024 pushphenna.com. All Rights Reserved.</p>
                     </div>
                 </div>
             </div>
@@ -1327,7 +1439,7 @@
 
 
     <!-- jQuery library -->
-    <!-- <script src="./js/jquery.slim.min.js"></script> -->
+    <script src="./js/jquery.slim.min.js"></script>
 
     <!-- custom js  -->
     <script src="./js/custom.js"></script>

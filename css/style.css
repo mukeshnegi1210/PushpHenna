@@ -3,17 +3,28 @@
 }
 
 .products-section .product-box .discount-tag {
-    top: 10px;
-    left: 10px;
+    top: 16px;
+    left: 16px;
     z-index: 9;
 }
 
-.products-section .product-box p {
-    min-height: 40px;
+.products-section .product-box .product-title {
+    /* min-height: 40px; */
 }
 
 .products-section .product-box .product-img {
     margin-bottom: 15px;
+    max-height: 240px;
+    min-height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.products-section .product-box .product-img img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }
 
 .why-us .why-us-box .img-box {
@@ -23,10 +34,6 @@
 
 .why-us .why-us-box:hover {
     border: 1.5px solid #971F1A;
-}
-
-.why-us .why-us-box:hover .img-box {
-    transform: rotate(360deg);
 }
 
 .product-features-section .product-feature-box {
@@ -54,6 +61,11 @@
 .customer-testimonials {
     background: url(../images//banners/testimonial-banner.png) no-repeat center;
     background-size: cover;
+}
+
+.customer-testimonials .testimonial-box:hover {
+    transform: scale(1.05);
+
 }
 
 .featured-products .featured-product:hover img {
@@ -308,6 +320,48 @@ footer .footer-copyright ul li+li {
     cursor: pointer;
 }
 
-.product-details-section .product-container .product-images .product-thumbnail+.product-thumbnail {
-    margin-left: 15px;
+.product-details-section .product-container .product-images .product-thumbnail {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* filter headers ================ */
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+
+
+.slider {
+    width: 100%;
+    appearance: none;
+    height: 2px;
+    background-color: #8CA472;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #FEFAF0;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #8CA472;
+}
+
+.slider-input {
+    padding: 5px;
+    flex: 0 0 45%;
+    max-width: 44%;
+}
+
+.slider-input input {
+    width: auto;
+    max-width: 90%;
 }

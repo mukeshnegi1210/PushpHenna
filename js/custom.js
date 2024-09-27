@@ -94,10 +94,26 @@ $(function () {
         );
     }
 
+    $(".btn-open-filter").click(function () {
+      $(".product-filters").addClass("active");
+    });
+
+    $(".btn-close-filter").click(function () {
+      $(".product-filters").removeClass("active");
+    });
+
+
+   
+
+
+
     AOS.init({
       delay: 200,
       duration: 800,
     });
+
+
+
 });
 
 $(window).on("load", function () {
