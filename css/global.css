@@ -512,7 +512,7 @@ input.form-control:focus {
   min-height: 40px;
   border: 1px solid #B3B3AA;
   background-color: #FEFAF0;
-  border-radius: 0;
+  border-radius: 5px;
   font-size: 1em;
 }
 

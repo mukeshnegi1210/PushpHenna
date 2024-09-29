@@ -103,7 +103,13 @@ $(function () {
     });
 
 
-   
+    $(".btn-open-cart").click(function () {
+      $(".cart-modal").addClass("active");
+    });
+
+    $(".btn-close-cart").click(function () {
+      $(".cart-modal").removeClass("active");
+    });
 
 
 

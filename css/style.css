@@ -144,11 +144,11 @@ footer .footer-top .social-media-links li a:hover {
     color: #ffffff;
 }
 
-footer .footer-copyright ul li {
+footer .footer-copyright py-2 ul li {
     padding: 0 10px;
 }
 
-footer .footer-copyright ul li+li {
+footer .footer-copyright py-2 ul li+li {
     border-left: 1px solid;
 
 }
@@ -365,3 +365,261 @@ footer .footer-copyright ul li+li {
     width: auto;
     max-width: 90%;
 }
+
+
+
+/* payment ========================== */
+
+.cart-modal {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    right: -100%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99999;
+}
+.cart-modal.active{
+    right: 0;
+}
+.cart-modal .cart-pop-inner {
+    background-color: #ffffff;
+    width: 420px;
+    max-width: 100%;
+    margin-left: auto;
+    max-height: 100vh;
+    height: 100vh;
+    padding: 145px 20px 155px;
+}
+
+
+.cart-modal .cart-pop-inner .cart-header {
+    top: 0;
+    left: 0;
+    padding: 15px 20px;
+}
+
+.cart-modal .cart-pop-inner .cart-items {
+    max-height: calc(100vh - 300px);
+    overflow-y: auto;
+    padding: 15px 0;
+}
+
+.cart-modal .cart-pop-inner .cart-bottom {
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    padding: 15px 20px;
+}
+
+.cart-modal .cart-pop-inner .cart-item {
+    display: flex;
+    align-items: center;
+}
+
+.cart-modal .cart-pop-inner .cart-item+.cart-item {
+    margin-top: 15px;
+}
+
+.cart-modal .cart-pop-inner .cart-item-img {
+    flex: 0 0 80px;
+    margin-right: 10px;
+}
+
+.cart-modal .cart-pop-inner .cart-item-img img {
+    width: 100%;
+    height: 80px;
+}
+
+
+
+.steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%
+}
+
+.steps .steps-inner {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem
+}
+
+.steps .steps-inner .step {
+    display: flex;
+    align-items: center
+}
+
+.steps .steps-inner .step .info-wrap {
+    position: relative;
+    display: flex;
+    align-items: center
+}
+
+.steps .steps-inner .step .info-wrap .circle-box {
+    width: 16px;
+    height: 16px
+}
+
+.steps .steps-inner .step .info-wrap .title {
+    font-size: 13px;
+    font-weight: 400;
+    color: #c9c9c9;
+    font-family: "metropolismedium"
+}
+
+.steps .steps-inner .step .info-wrap:after {
+    content: "";
+    width: .875rem;
+    border: 1px dashed #ededed;
+    position: absolute;
+    z-index: -1;
+    left: 115%;
+    z-index: 1;
+
+}
+
+.steps .steps-inner .step.complete .info-wrap {
+    display: flex;
+    align-items: center;
+    gap: .1rem
+}
+
+.steps .steps-inner .step.complete .info-wrap .title {
+    color: #0A472E;
+}
+
+.steps .steps-inner .step.complete .info-wrap .circle-box {
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.steps .steps-inner .step.complete .info-wrap .circle-box::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-position: -52px -262px;
+    background-image: url(../images/icons/icons.svg);
+    width: 16px;
+    height: 16px
+}
+
+.steps .steps-inner .step.complete .info-wrap::after {
+    border-color: #0A472E;
+}
+
+.steps .steps-inner .step:last-child .info-wrap:after {
+    display: none
+}
+
+.steps .steps-inner .step.pointer {
+    cursor: pointer
+}
+
+.merchant-color {
+    color: #8CA472 !important;
+}
+
+.payment-modal .added-addresses .added-address {
+    border: 2px solid #A3A39E;
+    padding: 20px 15px 15px 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.payment-modal .added-addresses .added-address.selected {
+    border-color: #0A472E;
+}
+
+.payment-modal .added-addresses .added-address.selected::before {
+    content: "";
+    background-image: url(../images/icons/icons.svg);
+
+    background-repeat: no-repeat;
+    width: 20px;
+    background-color: #0A472E;
+    height: 18px;
+    display: block;
+    position: absolute;
+    left: 0px;
+    text-align: center;
+    border-radius: 8px 0px 8px 0px;
+    top: 0px;
+    background-position: -55px -277px;
+    border: 6px solid #0A472E;
+}
+
+.payment-modal .added-addresses .added-address+.added-address {
+    margin-top: 20px;
+}
+
+
+.coupon-accordion .accordion-button {
+    color: #ffffff;
+    background-color: #8CA472;
+    box-shadow: none;
+    outline: none;
+}
+
+.coupon-accordion .accordion-button:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.coupon-accordion .accordion-button::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.coupon-accordion .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+
+.offer-accordion {
+    background-color: #ffffff;
+    box-shadow:  0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.offer-accordion .accordion-button:not(.collapsed) {
+    color: #1F1E0B;
+    background-color: #ffffff;
+}
+
+.offer-accordion .accordion-button:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.offer-accordion .accordion-button .title {
+    order: 1;
+    margin-left: 0;
+
+}
+
+.offer-accordion .accordion-button .total-price {
+    order: 3;
+    margin-left: 0;
+}
+
+.offer-accordion .accordion-button::after {
+    order: 2;
+    margin-left: 0;
+}
+
+
+.offer-accordion .accordion-button:not(.collapsed)::after {
+    margin-left: 5px;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%212529'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
