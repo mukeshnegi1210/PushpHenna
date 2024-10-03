@@ -16,6 +16,7 @@
     <meta property="og:title" content="Pushp Henna" />
     <meta property="og:type" content="website" />
     <!-- favicon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -33,10 +34,35 @@
     <link rel="stylesheet" href="./css/responsive.css" />
     <title>Pushp Henna</title>
 </head>
+<style>
+    /* tabsssbsbbss=============== */
+    .custom-tabs-wrapper {
+        display: none;
+        top: 0;
+        left: 0;
+        background-color: #FEFAF0;
+        z-index: 999;
+
+    }
+
+    .custom-tabs-wrapper.sticky {
+        display: block;
+    }
+
+    .custom-tabs-wrapper .custom-tabs ul .tab-item.active a {
+        background-color: #971F1A;
+        color: #ffffff;
+    }
+
+    .custom-tabs-wrapper .custom-tabs ul .tab-item a {
+        padding: 10px 15px;
+        color: #1F1E0B;
+    }
+</style>
 <!-- Pre Loader -->
-<!-- <div id="aa-preloader-area">
+<div id="aa-preloader-area">
     <div class="pulse"></div>
-</div> -->
+</div>
 <!-- SCROLL TOP BUTTON -->
 <a class="scrollToTop" href="#"><i class="fa fa-angle-double-up"></i></a>
 <!-- END SCROLL TOP BUTTON -->
@@ -447,7 +473,51 @@
         </div>
     </section>
     <!-- faq section  -->
-    <section class="faq-section my-5">
+
+
+    <!-- sticky Tabs section  -->
+    <div class="custom-tabs-wrapper w-100 position-fixed border-top border-bottom">
+        <div class="product-actions border-bottom">
+            <div class="container py-2">
+                <div class="d-flex align-items-center">
+                    <div>
+                        <h6 class="text-primary mb-0">Voloria Body Lotion Aloevera</h6>
+                        <p class="mb-0 font-weight-normal">
+                            <span class="text-orange">₹210.00</span>
+                            <span class="text-primary text-decoration-line-through">MRP ₹252.00</span>
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-end ms-auto">
+                        <span class="d-inline-flex bg-white border rounded-3 px-2  align-items-center">
+                            <button class="border-0 bg-transparent py-1 px-2">
+                                <i class="fa-solid fa-minus font-small"></i>
+                            </button>
+                            <span class="mx-2 py-1">1</span>
+                            <button class="border-0 bg-transparent py-1 px-2">
+                                <i class="fa-solid fa-plus  font-small"></i>
+                            </button>
+                        </span>
+                        <button class="btn btn-green-light ms-4">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="custom-tabs">
+            <div class="container">
+                <ul class="d-flex justify-content-center mb-0 py-2">
+                    <li class="tab-item active"><a class="d-inline-block font-weight-semi rounded-2"
+                            href="#faqs">FAQs</a></li>
+                    <li class="tab-item"><a class="d-inline-block font-weight-semi rounded-2"
+                            href="#reviews">Reviews</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- sticky Tabs section  ends-->
+
+
+
+    <section class="faq-section my-5 scroll-section" id="faqs">
         <div class="container">
             <h2 class="text-uppercase mb-5 text-secondary">FREQUENTLY ASKED QUESTIONS</h2>
 
@@ -544,7 +614,7 @@
     <!-- featured products section -->
 
     <!-- Customer Reviews  section  -->
-    <section class="customer-reviews-section my-5">
+    <section class="customer-reviews-section my-5 scroll-section" id="reviews">
 
         <div class="reviews-overview bg-light-yellow text-dark py-5">
             <div class="container-lg">
@@ -1014,6 +1084,57 @@
 
     <!-- custom js  -->
     <script src="./js/custom.js"></script>
+
+    <script>
+
+
+        $(document).ready(function () {
+            // Get the height of the header
+            var headerHeight = $('header').outerHeight();
+
+            // Hide tabs initially
+            $('.custom-tabs-wrapper').hide();
+
+            // Show tabs and make sticky after scrolling 500px
+            $(window).on('scroll', function () {
+                if ($(window).scrollTop() > 300) {
+                    $('.custom-tabs-wrapper').fadeIn();
+                    $('.custom-tabs-wrapper').addClass('sticky');
+                } else {
+                    $('.custom-tabs-wrapper').fadeOut();
+                    $('.custom-tabs-wrapper').removeClass('sticky');
+                }
+
+                // Update top position based on the header height dynamically
+                $('.custom-tabs-wrapper.sticky').css('top', headerHeight + 'px');
+
+                // Highlight tab when scrolling
+                var scrollPosition = $(window).scrollTop();
+                $('.scroll-section').each(function () {
+                    var sectionTop = $(this).offset().top - (headerHeight + 20); // Adjust for header and tabs height
+                    var sectionBottom = sectionTop + $(this).outerHeight();
+
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                        var currentId = $(this).attr('id');
+                        $('.custom-tabs-wrapper .custom-tabs ul .tab-item').removeClass('active');
+
+                        $('.custom-tabs-wrapper .custom-tabs ul .tab-item a[href="#' + currentId + '"]').parent().addClass('active');
+                    }
+                });
+            });
+
+            // Smooth scroll on tab click
+            $('.custom-tabs-wrapper .custom-tabs ul .tab-item a').on('click', function (e) {
+                e.preventDefault();
+                var target = $($(this).attr('href'));
+                $('html, body').animate({
+                    scrollTop: target.offset().top - (headerHeight + 10) // Adjust scroll position based on header height
+                }, 500);
+            });
+        });
+
+
+    </script>
 
 </body>
 
