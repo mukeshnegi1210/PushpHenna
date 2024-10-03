@@ -5,6 +5,7 @@ header {
     background-color: #FEFAF0;
     width: 100%;
     left: 0;
+    position: relative;
 }
 
 header.fixed-header {
@@ -14,6 +15,42 @@ header.fixed-header {
 header .header-top {
     padding: 9px 0;
     font-size: 16px;
+}
+
+header .header-top button {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.header-search {
+    background-color: #FEFAF0;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    z-index: 9999;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms ease-in;
+}
+
+.header-search.active {
+    top: 0;
+}
+
+.header-search .search-wrapper {
+    border: 1px solid #510B08;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.header-search .search-wrapper input {
+    border: 0;
+    border-radius: 0;
 }
 
 header .header-bottom {
@@ -55,7 +92,7 @@ header .nav-item.active .nav-link {
 header .nav-item.dropdown .submenu {
     position: absolute;
     left: 50%;
-    background-color: #FEFAF0;
+    background-color: #ffffff;
     width: 100%;
     top: -100px;
     transform: translateX(-50%);
@@ -63,7 +100,7 @@ header .nav-item.dropdown .submenu {
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
     z-index: -1;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); */
     transition: all 300ms ease-in-out;
     opacity: 0;
     visibility: hidden;
@@ -84,16 +121,26 @@ header .nav-item.dropdown .submenu .offer-img {
     margin-left: auto;
 }
 
-header .nav-item.dropdown .submenu ul li a {
+header .nav-item.dropdown .submenu h6 {
     color: #510B08;
+    font-weight: medium;
+    margin-bottom: 15px;
+}
+
+header .nav-item.dropdown .submenu ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+header .nav-item.dropdown .submenu ul li a {
+    color: #1F1E0B;
     display: block;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 5px 0px;
+
 }
 
 header .nav-item.dropdown .submenu ul li a:hover {
-    background-color: #510B08;
-    color: #ffffff;
+    font-weight: bold;
 }
 
 
