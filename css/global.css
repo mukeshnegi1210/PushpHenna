@@ -71,7 +71,7 @@ h6,
 
 h1,
 .h1 {
-  font-size: 55px;
+  font-size: 50px;
 }
 
 h2,
@@ -548,6 +548,7 @@ textarea.form-control:not([rows]) {
 
 /* placeholder color ======== */
 
+
 .form-control::-webkit-input-placeholder,
 ::-webkit-input-placeholder {
   /* Edge */
@@ -633,6 +634,10 @@ textarea.form-control:not([rows]) {
   min-height: auto !important;
 }
 
+.line-height-1-5 {
+  line-height: 1.5;
+}
+
 /* =======================================
              media queries
 ======================================= */
@@ -679,4 +684,3 @@ textarea.form-control:not([rows]) {
     padding: 5px 15px
   }
 }
-

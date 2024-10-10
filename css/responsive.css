@@ -11,7 +11,8 @@
         z-index: 999;
         overflow-y: auto;
     }
-    .product-category-section .product-filters.active{
+
+    .product-category-section .product-filters.active {
         left: 0;
     }
 }
@@ -46,5 +47,16 @@
 
     .products-section .row [class*="col-"] {
         padding: 0 5px;
+    }
+    .contact-form-section .container{
+        padding: 15px;
+        
+    }
+    .contact-form-section .container .form-wrapper {
+        padding: 25px;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+
     }
 }

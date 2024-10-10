@@ -663,3 +663,78 @@ footer .footer-copyright py-2 ul li+li {
     width: 60px;
     object-fit: cover;
 }
+
+
+.products-listing-mode .product-main-img {
+    flex: 0 0 125px;
+    margin-right: 20px;
+}
+
+.products-listing-mode .action {
+    margin-left: 20px;
+}
+
+.products-listing-mode .product-main-img img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+}
+
+.banner-type-2 {
+    background-color: #ffe9d4;
+}
+
+.banner-type-2 .container {
+    background: #ffe9d4 url("../images/banners/banner-5.jpg") no-repeat right bottom;
+}
+
+.why-choose-us {
+    background-image: url(../images/banners/why-choose-banner-3.png), url(../images/banners/why-choose-banner-4.png);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+}
+
+
+.our-values-section .value-box img {
+    max-width: 80px;
+    margin: 0 auto 40px;
+
+}
+
+.policy-page ul {
+    list-style-type: disc;
+    padding-left: 15px;
+}
+
+
+.contact-information-section .contact-information-box {
+    height: 100%;
+    border: 1.5px dashed #971F1A;
+    padding: 40px;
+    border-radius: 6px;
+}
+
+.contact-form-section .container {
+    background: url(../images/banners/contact-form-bg.jpeg) no-repeat center;
+    border-radius: 6px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.contact-form-section .container .form-wrapper {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: -15px;
+
+}
+
+.contact-form-section .container .form-wrapper label {
+    color: #ffffff;
+}
+
+.form-wrapper .form-control {
+    border-radius: 0;
+    background-color: #ffffff;
+}
